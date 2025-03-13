@@ -35,11 +35,11 @@ function salvar(event:Event){
     event?.preventDefault(); //cancelar o disparo de evento
     const novoCampeonato : Campeonato = {
         id:Date.now(),
-        categoria: "masculino",
-        dataFim: "2025-10-30",
-        dataInicio: "2025-04-01",
-        nome: "Brasileirão 2025",
-        tipo: "pontos-corridos"
+        categoria: (document.getElementById("nome")as HTMLInputElement).value,
+        dataFim: (document.getElementById("nome")as HTMLInputElement).value,
+        dataInicio: (document.getElementById("nome")as HTMLInputElement).value,
+        nome: (document.getElementById("nome")as HTMLInputElement).value,
+        tipo: (document.getElementById("nome")as HTMLInputElement).value
     }
     campeonatos.push(novoCampeonato);
     atualizarTabela()
