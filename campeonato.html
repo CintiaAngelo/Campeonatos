@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Campeonato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Campeonato</h1>
+        <form id="formCampeonato"action="#" method="POST">
+            <label for="nome">Nome do Campeonato:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="amador">Amador</option>
+                <option value="profissional">Profissional</option>
+            </select>
+
+            <label for="tipo">Tipo de Torneio:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="mata-mata">Mata-mata</option>
+                <option value="pontos-corridos">Pontos Corridos</option>
+            </select>
+
+            <label for="inicio">Data de Início:</label>
+            <input type="date" id="dataInicio" name="inicio" required>
+
+            <label for="fim">Data de Término:</label>
+            <input type="date" id="dataFim" name="fim" required>
+
+            <button type="submit" value="cadastrar">Cadastrar Campeonato</button>
+        </form>
+
+    <hr>
+    <table >
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Tipo</th>
+                <th>Inicio</th>
+                <th>Término</th>
+            </tr>
+        </thead>
+        <tbody id="tbCampeonatos">
+        </tbody>
+    </table>
+</div>
+</body>
+<script type="text/javascript" src="campeonato.js"></script>
+</html>
