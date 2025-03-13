@@ -33,3 +33,4 @@ function salvar(event) {
     campeonatos.push(novoCampeonato);
     atualizarTabela();
 }
+formCampeonato.addEventListener("submit", salvar);

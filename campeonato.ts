@@ -45,3 +45,6 @@ function salvar(event:Event){
     atualizarTabela()
 
 }
+
+formCampeonato.addEventListener("submit", salvar)
+
